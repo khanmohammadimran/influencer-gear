@@ -1,0 +1,33 @@
+/* Common styles Start */
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color: #3A3A3A;
+}
+/* Common styles end  */
+
+/* Menu Styles Start  */
+.header-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-text{
+    font-size: 24px;
+    color: var(--main-color);
+}
+ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    padding-left: 20px;
+}
+li a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+/* Menu Styles end  */
+
