@@ -6,6 +6,12 @@ body{
 :root{
     --main-color: #3A3A3A;
 }
+a{
+    text-decoration: none;
+}
+p{
+    color: var(--main-color);
+}
 /* Common styles end  */
 
 /* Menu Styles Start  */
@@ -30,4 +36,37 @@ li a{
     color: var(--main-color);
 }
 /* Menu Styles end  */
+
+/* Main Section Start  */
+
+/* Hero Section Start  */
+.top-section{
+    width: 1019px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+.top-section-image{
+    Width: 440px;
+    Height: 414px;
+
+}
+.top-section-title{
+    font-size: 52px;
+    color: var(--main-color);
+}
+.top-section-text{
+    padding-bottom: 16px;
+}
+.primary-button{
+    margin-top: 10px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+    color: #ffffff;
+}
+a .fas{
+    margin-left: 8px;
+}
+/* Main Section end  */
 
