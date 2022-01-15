@@ -86,7 +86,7 @@ a .fas{
     column-gap: 30px;
     padding-top: 30px;
 }
-.popular-text{
+.heading-text{
     text-align: center;
 }
 .single-product-detail{
@@ -128,5 +128,37 @@ a .fas{
     font-size: 14px;
 }
 /* Product Section End  */
+
+/* Contact Section Start  */
+.contact-us{
+    padding-top: 30px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form{
+    width: 400px;
+}
+input, textarea{
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    outline: none;
+    border:1px solid gray;
+    margin-top: 15px;
+    font-family: inherit;
+    border-radius: 10px;
+}
+input[type="submit"]{
+    width: unset;
+}
+.map{
+    padding: 20px 0;
+}
+/* Contact Section End  */
+
 /* Main Section end  */
 
