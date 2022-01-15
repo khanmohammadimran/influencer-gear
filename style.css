@@ -12,6 +12,9 @@ a{
 p{
     color: var(--main-color);
 }
+h3, h4{
+    margin: 0;
+}
 /* Common styles end  */
 
 /* Menu Styles Start  */
@@ -19,6 +22,7 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 80px;
 }
 .logo-text{
     font-size: 24px;
@@ -41,10 +45,12 @@ li a{
 
 /* Hero Section Start  */
 .top-section{
-    width: 1019px;
     display: flex;
-    margin: auto;
     align-items: center;
+}
+.container{
+    width: 1019px;
+    margin: auto;
 }
 .top-section-image{
     Width: 440px;
@@ -68,5 +74,59 @@ li a{
 a .fas{
     margin-left: 8px;
 }
+
+/* Product Section Start  */
+.popular-collection{
+    padding-top: 100px;
+}
+.product-details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    column-gap: 30px;
+    padding-top: 30px;
+}
+.popular-text{
+    text-align: center;
+}
+.single-product-detail{
+    width: 329px;
+    height: 476px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.product-image img{
+    width: 300px;
+    height: 256px;
+    padding: 15px;
+}
+.product-text{
+    padding-left: 15px;
+}
+.product-info{
+    font-size: 14px;
+}
+.rating{
+    color: #5E6366;
+    font-size: 14px;
+}
+.product-name{
+    font-size: 28px;
+    font-weight: 500;
+}
+.product-price{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+}
+.filled{
+    color: #FB8200;
+    font-size: 14px;
+}
+.empty{
+    color: #ddd8d8;
+    font-size: 14px;
+}
+/* Product Section End  */
 /* Main Section end  */
 
