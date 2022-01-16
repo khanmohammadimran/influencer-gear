@@ -50,12 +50,11 @@ li a{
     align-items: center;
 }
 .container{
-    width: 1019px;
+    width: 1200px;
     margin: auto;
 }
 .top-section-image img{
-    Width: 440px;
-    Height: 414px;
+    width: 100%;
 
 }
 h1{
@@ -65,7 +64,7 @@ h1{
 .top-section-text{
     padding-bottom: 16px;
 }
-.top-section-text p{
+.top-section-text{
     color: var(--main-color);
 }
 .primary-button{
@@ -91,19 +90,21 @@ a .fas{
     column-gap: 30px;
     padding-top: 30px;
 }
+.top-section-text{
+    color: #000;
+}
 .heading-text{
     color: var(--main-color);
-    text-align: center;
 }
-.single-product-detail{
-    width: 329px;
-    height: 476px;
+.single-product-detail {
+    max-width: 100%;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
 .product-image img{
-    width: 300px;
-    height: 256px;
+    /* width: 300px;
+    height: 256px; */
+    max-width: 100%;
     padding: 15px;
 }
 .product-text{
@@ -133,17 +134,22 @@ a .fas{
     color: #ddd8d8;
     font-size: 14px;
 }
+.see-more{
+    color: #5E6366;
+    text-align: right;
+    padding-top: 20px;
+}
 /* Product Section End  */
 
 /* Contact Section Start  */
 .contact-us{
     padding: 30px 0;
 }
-.contact{
+/* .contact{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 form{
     width: 400px;
 }
@@ -161,9 +167,6 @@ input, textarea{
 input[type="submit"]{
     width: unset;
 }
-.map{
-    padding: 20px 0;
-}
 /* Contact Section End  */
 
 /* Main Section end  */
@@ -174,7 +177,10 @@ input[type="submit"]{
     padding: 50px 0;
     text-align: center;
 }
-.footer-content h2, h5, p, .social-icon{
+.footer-content h2, h5, .social-icon{
+    color: #ffffff;
+}
+.footer-right{
     color: #ffffff;
 }
 .footer-text h5{
@@ -203,74 +209,54 @@ input[type="submit"]{
     }
 
 }
-
 /* For Mobile  */
-@media (max-width: 600){
-    /* header section  */
-    .header-section{
+
+@media (max-width:688px){
+
+    html, body{
+        width:100%;
+        overflow-x:hidden;
+        }
+    .logo{
+        max-width: 100%;
+    }
+    .header-section {
+        max-width: 100%;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        padding-bottom: 0;
     }
-    .logo p{
-        justify-content: center;
-    }
-    nav{
+    ul{
         display: none;
     }
-    .header-section .logo h2{
-        text-align: center;
+    
+    /* Top Section  */
+    .top-section {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 100%;
     }
-    /* Top section  */
-    .top-section{
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-    h1{
-        font-size: 28px;
-    }
-    .top-section-title{
-        text-align: center;
-    }
-    .top-section-image img{
-        width:202px;
-        height: 190px;
-    }
-    .top-section-text p{
-        font-size: 14px;
-    }
-    /* popular section  */
-    .product-details{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .single-product-detail{
+    .container{
+        max-width: 1200px;
         margin: auto;
     }
-    /* Contact us section  */
-    .contact{
-        flex-direction: column;
+    .top-section-title{
+        min-width: 100%;
+        margin: 0;
+        font-size: 28px;
     }
-
-    /* Tablet Version  */
-    @media only screen and (max-width: 768px){
-        /* Top Section  */
-        .top-section{
-            flex-direction: column-reverse;
-            justify-content: center;
-        }
-        /* Product Section  */
-        .product-details{
-            grid-template-columns: repeat(2, 1fr);
-        }
-        /* Contact us section  */
-        .contact{
-            display: flex;
-            flex-direction: row;
-        }
-        /* For Desktop  */
-        @media only screen and (min-width: 992px){
-
-        }
-    
+    .top-section-image img {
+        Width: 100%;
     }
+    /* Popular product section  */
+    .popular-collection{
+        padding-top: 0px;
+    }
+    .product-details{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    /* Contact Section  */
 }
